@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "name": "DEPRESSION TREATMENT",
+        "price": "500",
+        "description": "Three of the more common methods used in depression treatment include cognitive behavioral therapy, interpersonal therapy, and psychodynamic therapy. Often, a blended approach is used.",
+        "img": "https://i.ibb.co/R26j44n/services3.jpg"
+    },
+    {
+        "id": 2,
+        "name": "INDIVIDUAL TREATMENT",
+        "price": "800",
+        "description": "Individual therapy is one type of psychotherapy in which a trained professional helps a single person work through personal issues they have been facing. It is an effective treatment for a variety of emotional difficulties and mental illnesses.",
+        "img": "https://i.ibb.co/qMDnh81/services1.jpg"
+    },
+    {
+        "id": 3,
+        "name": "ANIXITY TREATMENT",
+        "price": "600",
+        "description": "Psychotherapy. Also known as talk therapy or psychological counseling, psychotherapy involves working with a therapist to reduce your anxiety symptoms. It can be an effective treatment for anxiety.",
+        "img": "https://i.ibb.co/dr4c2bD/services2.jpg"
+    }
+    
+]

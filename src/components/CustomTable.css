@@ -1,0 +1,89 @@
+/* CustomTable.css */
+.table_container {
+  background-color: black; /* Black background for the entire container */
+  color: white; /* White text by default */
+  padding: 50px;
+  border-radius: 10px; /* Optional rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+}
+
+.search-bar {
+  width: 30%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid white; /* White border */
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white; /* Ensure all text in the table is white */
+}
+
+.table th,
+.table td {
+  border: 1px solid white; /* White borders */
+  padding: 10px;
+  text-align: left;
+  color: white; /* Explicitly set text color to white */
+}
+
+.table th {
+  cursor: pointer;
+  background-color: #222; /* Darker background for headers */
+}
+
+.table th:hover {
+  background-color: #333; /* Highlight on hover */
+}
+
+.table tr:nth-child(even) {
+  background-color: #111; /* Slightly lighter black for alternating rows */
+}
+
+.table tr:nth-child(odd) {
+  background-color: black;
+}
+
+.table tr:hover {
+  background-color: #222; /* Highlight on row hover */
+}
+
+.pagination {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 20px;
+  color: white;
+}
+
+.pagination select {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.page-buttons button {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.page-buttons button:disabled {
+  color: gray;
+  border-color: gray;
+  cursor: not-allowed;
+}
+
+.page-buttons button:hover:not(:disabled) {
+  background-color: #333; /* Hover effect for pagination buttons */
+}
