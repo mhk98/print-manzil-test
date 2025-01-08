@@ -71,7 +71,7 @@ const CustomTable = () => {
   const endRow = Math.min(startRow + rowsPerPage - 1, totalRows);
 
   return (
-    <div className="p-4 table_container">
+    <div className=" table_container">
       {/* Search bar */}
       <input
         type="text"
@@ -82,7 +82,8 @@ const CustomTable = () => {
       />
 
       {/* Table */}
-      <table className="table">
+    <div className="table-wrapper">
+    <table className="table">
         <thead>
           <tr>
             <th onClick={() => handleSort("name")}>
@@ -108,6 +109,7 @@ const CustomTable = () => {
           ))}
         </tbody>
       </table>
+    </div>
 
       {/* Pagination */}
       <div className="pagination">
@@ -123,7 +125,7 @@ const CustomTable = () => {
         </div>
 
         {/* Display range and total rows */}
-        <div>
+        <div className="text-white">
           {startRow}-{endRow} of {totalRows} 
         </div>
 

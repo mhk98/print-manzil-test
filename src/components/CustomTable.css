@@ -1,12 +1,11 @@
-/* CustomTable.css */
 .table_container {
   background-color: black; /* Black background for the entire container */
   color: white; /* White text by default */
   padding: 50px;
-  border-radius: 10px; /* Optional rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
 }
 
+/* Search Bar */
 .search-bar {
   width: 30%;
   padding: 10px;
@@ -17,10 +16,17 @@
   color: white;
 }
 
+/* Table Wrapper */
+.table-wrapper {
+  overflow-x: auto; /* Enable horizontal scrolling for the table */
+  margin-top: 20px;
+}
+
 .table {
   width: 100%;
   border-collapse: collapse;
   color: white; /* Ensure all text in the table is white */
+  min-width: 800px; /* Ensure the table has a minimum width */
 }
 
 .table th,
@@ -52,6 +58,7 @@
   background-color: #222; /* Highlight on row hover */
 }
 
+/* Pagination */
 .pagination {
   display: flex;
   justify-content: end;
@@ -86,4 +93,28 @@
 
 .page-buttons button:hover:not(:disabled) {
   background-color: #333; /* Hover effect for pagination buttons */
+}
+
+/* Responsive Design */
+
+/* For small devices (phones, up to 600px) */
+@media (max-width: 600px) {
+  .search-bar {
+    width: 100%; /* Full width for smaller screens */
+    font-size: 14px;
+  }
+
+  .table-wrapper {
+    overflow-x: auto; /* Ensure horizontal scrolling */
+  }
+
+  .pagination {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .page-buttons button {
+    padding: 5px;
+    font-size: 12px;
+  }
 }
